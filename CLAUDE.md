@@ -4,8 +4,8 @@ Curated Claude skills for product management, strategy, research, and entreprene
 
 ## Installed Skill Packs
 
-### 1. Dean Peters PM Frameworks (`dean-peters/`)
-44 battle-tested product management frameworks. See `dean-peters/NAVIGATOR.md` for the full decision tree.
+### 1. PM Frameworks (`pm-frameworks/`)
+44 battle-tested product management frameworks. See `pm-frameworks/NAVIGATOR.md` for the full decision tree.
 
 **Key skills:**
 - `prd-development` — Write PRDs using best-practice templates
@@ -23,8 +23,8 @@ Curated Claude skills for product management, strategy, research, and entreprene
 - `press-release` — Amazon Working Backwards
 - `career-growth-advisor` — PM→Director→VP/CPO career transitions
 
-### 2. Compound PM Agents (`compound-pm/`)
-Multi-agent PM system that compounds with each use. See `compound-pm/NAVIGATOR.md` for command reference.
+### 2. PM Agents (`pm-agents/`)
+Multi-agent PM system that compounds with each use. See `pm-agents/NAVIGATOR.md` for command reference.
 
 **Key commands:**
 - `/pm:spec` — Write specs with parallel agent review
@@ -41,8 +41,8 @@ Multi-agent PM system that compounds with each use. See `compound-pm/NAVIGATOR.m
 - `vision-narrative` — Craft compelling product vision
 - `stakeholder-buyin` — Stakeholder alignment tactics
 
-### 3. Alireza Domain Skills (`alireza/`)
-6 specialist skills with 11 Python scripts for founder/consultant workflows. See `alireza/NAVIGATOR.md` for script reference.
+### 3. Domain Tools (`domain-tools/`)
+6 specialist skills with 11 Python scripts for founder/consultant workflows. See `domain-tools/NAVIGATOR.md` for script reference.
 
 **Key skills:**
 - `competitive-teardown` — Deep competitive analysis with scoring
@@ -66,15 +66,15 @@ Context management system for AI coding agents (Claude Code, Cursor, etc.). Main
 
 | Task | Use this skill |
 |------|---------------|
-| Write a PRD | `dean-peters/prd-development` |
-| Competitive research | `alireza/competitive-teardown` |
-| Strategy session | `compound-pm` → `/pm:strategy` |
-| Market sizing | `dean-peters/tam-sam-som-calculator` |
-| Pitch/fundraising | `dean-peters/press-release` + `dean-peters/positioning-workshop` |
-| Roadmap | `dean-peters/roadmap-planning` |
-| Discovery | `dean-peters/discovery-process` |
-| Metrics | `compound-pm/skills/metrics-design` |
-| GTM | `alireza/marketing-strategy-pmm` |
-| Financial model | `alireza/financial-analyst` |
-| Career transition | `dean-peters/career-growth-advisor` |
+| Write a PRD | `pm-frameworks/prd-development` |
+| Competitive research | `domain-tools/competitive-teardown` |
+| Strategy session | `pm-agents` → `/pm:strategy` |
+| Market sizing | `pm-frameworks/tam-sam-som-calculator` |
+| Pitch/fundraising | `pm-frameworks/press-release` + `pm-frameworks/positioning-workshop` |
+| Roadmap | `pm-frameworks/roadmap-planning` |
+| Discovery | `pm-frameworks/discovery-process` |
+| Metrics | `pm-agents/skills/metrics-design` |
+| GTM | `domain-tools/marketing-strategy-pmm` |
+| Financial model | `domain-tools/financial-analyst` |
+| Career transition | `pm-frameworks/career-growth-advisor` |
 | Context management | `context-management` |
