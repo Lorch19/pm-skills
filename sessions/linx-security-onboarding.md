@@ -38,6 +38,75 @@ Linx's thought leadership centers on three pillars — internalize these, they r
 - Series B benchmarks: $7-10M ARR, sub-2x burn multiple, 120%+ NRR, diversified customer base, 3-5 referenceable logos.
 - Buyer pain: 89% of orgs have integrated <50% of apps with IGA. Legacy deployments take 12-18 months. Access reviews are rubber-stamp theater.
 
+## My PM Assignment (Completed — Build On This)
+I already completed a PM assignment for Linx: designing an AI Agent MVP for "Continuous Identity Risk Detection & Remediation." This represents my product thinking — the next session should build on and challenge these ideas, not start from scratch.
+
+### The Problem I Framed (3 compound crises)
+1. **Identity Explosion** — 93% breach involvement, NHI:human ratio 45:1, NHI growing 56% YoY
+2. **Capacity Collapse** — 100k+ annual findings, teams cover only ~20%, 80% backlog
+3. **The Reactive Trap** — Risk accumulates 24/7, governance is periodic (monthly/quarterly)
+
+### My Solution: Virtual Security Analyst
+An AI agent that continuously monitors risks (human & NHI), autonomously remediates clear issues, and escalates complex cases with full governance context. Core value prop: "The agent doesn't just fix the leak; it suggests a policy to patch the pipe."
+
+### Key Design Decisions
+- **Confidence × Risk Matrix** — 4 quadrants determining agent autonomy:
+  - High confidence + Low risk → AUTO-REMEDIATE (act immediately, notify after)
+  - High confidence + High risk → RECOMMEND (present case, human approves)
+  - Low confidence + Low risk → FLAG & MONITOR (surface for review)
+  - Low confidence + High risk → ESCALATE (full investigation, human decides)
+- **Risk Score** = Environment (Prod > Dev) × Data Sensitivity × Permission Level × Blast Radius
+- **Signal categories:** Identity (type, creator, HR status), Behavioral (API freq, login anomalies), Permissions (admin flags, peer comparison), Graph (owner chain, nested paths)
+
+### Progressive Autonomy Model (4 phases)
+1. **Shadow Mode** (~1-2 weeks) — Observe only, logs "I would have done X." Gates: detection coverage >80%, zero critical false positives.
+2. **Recommend** (~3-4 weeks) — Surfaces findings, human executes all. Gates: precision >85%, approval rate >70%.
+3. **Supervised** (~4-6 weeks) — Auto: low risk. Recommend: med/high risk. Gates: zero auto-incidents, MTTR improvement >20%.
+4. **Trusted Auto** (ongoing) — Auto: low + med risk. Recommend: high risk only. Per-risk-category progression.
+
+### The Autonomy Loop (key innovation)
+Alex (analyst) decides → Agent learns patterns (e.g., 10x similar approvals) → Agent proposes new policy rule → Sam (director) approves → Policy codified → Agent gains autonomy for future matches.
+
+### Personas
+- **Alex Chen** (Identity Security Analyst, 4yr exp, 3-person IAM team) — Spends 60% gathering context, only 20% on decisions. Drowning in alerts.
+- **Sam Williams** (Director Security Ops, reports to CISO, 15 people, <$100K budget) — Needs measurable risk reduction, not activity metrics. Can't get more headcount.
+- **Collaborators:** App owners (Jordan Park, Eng Manager — Slack escalations), GRC analyst (Morgan Lee — audit logs), IT Service Desk (manual tasks)
+
+### Capabilities Roadmap
+- **MVP:** Continuous Remediation (remediation is the market gap — competitors focus on detection or workflow)
+- **V1.1:** Governance + Collaboration (policy AI, natural language rule creation, Slack integration)
+- **V2:** Full IGA Suite (JIT access, compliance reviews, reporting, access approvals, onboarding)
+- **Platform:** AI-Powered Identity Security OS
+
+### Success Metrics I Defined
+- MTTR: 4h (↓92% from 2-day manual average)
+- Attack surface reduction: -35% YoY
+- Acceptance rate: 88%
+- False positives: <2%
+- Investigation time: 2min (↓8x from 15-30min manual)
+- Throughput: 5x findings per week, same headcount
+- Autonomy level: L3 target
+- Policy creation: 12/month from agent learning
+
+### Building Principles (3 pillars)
+1. **Trust** — Conservative start (shadow mode), proven accuracy, earned autonomy
+2. **Control** — Granular modes per risk category, kill switch, undo button
+3. **Visibility** — Reasoning traces ("why I think this" before "what I did"), decision logs, context links
+
+### Key Assumptions to Validate
+- ML risk scoring is accurate enough for automated decisions
+- Graph architecture can identify remediation paths, not just risks
+- NHI remediation is lower-stakes starting point than human identity changes
+- Customers will grant remediation permissions after shadow mode proves value
+- Trust must be earned incrementally through transparency
+
+## Reference Materials (on disk — load if needed)
+- `/Users/omrilorch/Desktop/Linx Onboarding/Linx Assignment.pdf` — My completed assignment deck (19 slides)
+- `/Users/omrilorch/Desktop/Linx Onboarding/How to Securely Delegate Access to Agents.pdf` — Agent delegation security patterns
+- `/Users/omrilorch/Desktop/Linx Onboarding/IAM for LLM-Based AI Agents.pdf` — IAM architecture for AI agents
+- `/Users/omrilorch/Desktop/Linx Onboarding/Market Guide for IGA.pdf` — Gartner Market Guide for IGA
+- `/Users/omrilorch/Desktop/Linx Onboarding/Reduce Your IAM Attack Surface.pdf` — IAM attack surface reduction strategies
+
 ## What I Need From This Session
 
 ### Phase 1: Competitive Positioning (Week 1-2)
