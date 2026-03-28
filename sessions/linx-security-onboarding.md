@@ -10,6 +10,16 @@ I'm Omri, starting as a PM at Linx Security. I have autonomy to challenge, ideat
 - **Customers:** Peloton, Wiz, Aramark, Discount Tire, Achieve, New American Funding — mix of mid-market and Fortune 500.
 - **Product pillars:** Modern IGA, Identity Security Posture Management (ISPM), Just-In-Time Access, Identity Lifecycle Management, Non-Human & Agentic Identity Governance.
 - **Latest launch:** "Autopilot" (March 2026) — autonomous AI agent for identity security. Demoed at RSA 2026.
+- **Analyst recognition:** Listed in Forrester's "Workforce Identity Security Platforms Landscape, Q4 2025" across 3 categories: identity governance, AI agent identity management (called "the top disruptor"), and identity security posture management.
+
+## Linx's Strategic Narrative (from their blog)
+Linx's thought leadership centers on three pillars — internalize these, they reveal how the company thinks:
+
+1. **Agentic identity as a first-class governance problem.** Linx defines agentic identities as autonomous AI systems that "determine paths, tools, and systems to use, and then act on those decisions without continuous human oversight." Three specific risks: sequential risk (benign individual actions, dangerous chains), compound access (agents autonomously expand permissions as they encounter obstacles), and delegation context loss (IAM systems see fragments, miss the unified decision-maker). Linx's answer: treat "decision sequences as first-class security objects" — not just individual entitlements.
+
+2. **JIT access from humans to agents.** Their model has 4 layers: visibility → policy/decision → intelligence → fulfillment/audit. Key differentiator: agents are distinct identities (not service account wrappers), agents cannot self-escalate beyond allow-lists, human approvers remain central. Kill-switch capabilities tied to anomaly detection.
+
+3. **Autopilot = autonomous but guardrailed.** Continuous monitoring + contextual risk evaluation + autonomous action OR human escalation. The philosophical bet: move from periodic access reviews (rubber-stamp theater) to continuous autonomous governance. The trust challenge: enterprise CISOs are skeptical of "autonomous" anything — Linx's guardrail design is the answer.
 
 ## Competitive Landscape
 - **SailPoint** — Re-IPO'd. Dominant incumbent. Launched AI-powered adaptive identity, privilege discovery, machine identity lifecycle, and Harbor Pilot agents. The 800-lb gorilla moving fast.
