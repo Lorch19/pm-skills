@@ -1,6 +1,9 @@
 ---
 name: altitude-horizon-framework
-description: "The core mental model for the PM-to-Director transition: altitude (scope) and horizon (time), the waiter-to-operator shift, four transition zones, named failure modes, and the Cascading Context Map."
+description: >-
+  The core mental model for the PM-to-Director transition: altitude (scope) and horizon (time), the waiter-to-operator shift, four transition zones, named failure modes, and the Cascading Context Map.
+  Use when you need to understand what changes in the PM-to-Director transition, diagnose which transition zone is causing friction, or create context from vague company strategy.
+  DO NOT use for full career coaching across multiple transitions — use career-growth-advisor instead.
 type: component
 theme: career-leadership
 best_for:

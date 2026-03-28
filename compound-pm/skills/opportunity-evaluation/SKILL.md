@@ -1,6 +1,9 @@
 ---
 name: opportunity-evaluation
-description: Evaluate product opportunities using the 5-question customer problem framework, business context analysis, and prioritization matrices. Use when assessing whether an idea is worth pursuing.
+description: >-
+  Evaluate product opportunities using the 5-question customer problem framework, business context analysis, and prioritization matrices.
+  Use when evaluating whether to pursue a new opportunity.
+  DO NOT use for existing feature prioritization — use RICE or prioritization frameworks instead.
 ---
 
 # Opportunity Evaluation Skill

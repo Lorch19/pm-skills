@@ -1,6 +1,9 @@
 ---
 name: metrics-design
-description: Design complete metrics frameworks with outcome-intermediate-leading hierarchy, activation funnels, and engagement dimensions. Use when defining how to measure product success.
+description: >-
+  Design complete metrics frameworks with outcome-intermediate-leading hierarchy, activation funnels, and engagement dimensions.
+  Use when defining success metrics, KPI hierarchies, or measurement plans.
+  DO NOT use for financial modeling — use the financial-analyst skill instead.
 ---
 
 # Metrics Design Skill

@@ -1,6 +1,9 @@
 ---
 name: skill-authoring-workflow
-description: Turn raw PM content into a compliant, publish-ready skill by choosing build/add paths, running conformance checks, and updating docs before commit.
+description: >-
+  Turn raw PM content into a compliant, publish-ready skill by choosing build/add paths, running conformance checks, and updating docs before commit.
+  Use when creating a new skill or updating an existing one and you need the full authoring workflow with validation.
+  DO NOT use when you need to use an existing PM skill — this is for skill authors, not skill consumers.
 type: workflow
 ---
 

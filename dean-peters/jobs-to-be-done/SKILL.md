@@ -1,6 +1,9 @@
 ---
 name: jobs-to-be-done
-description: Systematically explore what customers are trying to accomplish (functional, social, emotional jobs), the pains they experience, and the gains they seek. Use this framework to uncover unmet needs, vali
+description: >-
+  Systematically explore what customers are trying to accomplish (functional, social, emotional jobs), the pains they experience, and the gains they seek.
+  Use when you need to uncover unmet needs, validate product ideas, or understand why customers hire and fire your product.
+  DO NOT use for writing user stories — use user-story instead. DO NOT use for full discovery cycles — use discovery-process instead.
 type: component
 ---
 

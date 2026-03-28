@@ -1,6 +1,9 @@
 ---
 name: spec-review
-description: Create comprehensive product specs through structured AskUserQuestion interviews or review existing specs against a detailed completeness checklist. Use when creating specs from scratch (no solution doc) or reviewing spec quality.
+description: >-
+  Create comprehensive product specs through structured AskUserQuestion interviews or review existing specs against a detailed completeness checklist.
+  Use when reviewing a product spec before engineering handoff.
+  DO NOT use for writing specs — use the /pm:spec command instead.
 ---
 
 # Spec Review Skill

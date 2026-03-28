@@ -1,6 +1,9 @@
 ---
 name: vision-narrative
-description: Write compelling 3-part vision narratives that are detailed, opinionated, and user-centric. Use when creating spec narratives or stakeholder presentations.
+description: >-
+  Write compelling 3-part vision narratives that are detailed, opinionated, and user-centric.
+  Use when crafting a product vision statement or narrative for a spec.
+  DO NOT use for GTM messaging — use marketing-strategy-pmm instead.
 ---
 
 # Vision Narrative Skill

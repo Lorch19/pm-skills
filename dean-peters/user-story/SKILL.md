@@ -1,6 +1,9 @@
 ---
 name: user-story
-description: Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria. Use this to translate user needs into actionable development work that focuses on
+description: >-
+  Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria.
+  Use when writing user stories from scratch with proper acceptance criteria, or converting requirements into development-ready stories.
+  DO NOT use for breaking down large stories — use user-story-splitting instead. DO NOT use for breaking down epics — use epic-breakdown-advisor instead.
 type: component
 theme: pm-artifacts
 best_for:

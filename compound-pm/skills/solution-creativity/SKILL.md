@@ -1,6 +1,9 @@
 ---
 name: solution-creativity
-description: Apply 20 systematic creativity techniques to generate solution candidates for product opportunities. Use when brainstorming solutions or feeling stuck on approaches.
+description: >-
+  Apply 20 systematic creativity techniques to generate solution candidates for product opportunities.
+  Use when brainstorming solutions to a defined problem.
+  DO NOT use before problem framing is complete.
 ---
 
 # Solution Creativity Skill

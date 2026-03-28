@@ -1,3 +1,11 @@
+---
+name: competitive-teardown
+description: >-
+  Run a structured competitive analysis on any product or company, synthesizing data into feature matrices, SWOT, positioning maps, and stakeholder presentations.
+  Use when you need structured competitive intelligence with scoring, feature matrices, and pricing analysis.
+  DO NOT use for strategic product analysis from multiple angles — use compound-pm product-riff instead.
+---
+
 # Competitive Teardown
 
 **Tier:** POWERFUL  

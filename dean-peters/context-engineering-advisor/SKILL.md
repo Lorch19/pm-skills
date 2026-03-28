@@ -1,6 +1,9 @@
 ---
 name: context-engineering-advisor
-description: Diagnose context stuffing vs. context engineering. Assess practices, define boundaries, and advise on memory architecture, retrieval, and the Research→Plan→Reset→Implement cycle.
+description: >-
+  Diagnose context stuffing vs. context engineering. Assess practices, define boundaries, and advise on memory architecture, retrieval, and the Research→Plan→Reset→Implement cycle.
+  Use when your AI outputs are mediocre despite providing lots of information, or when architecting context for multi-step AI workflows.
+  DO NOT use for assessing overall AI maturity — use ai-shaped-readiness-advisor instead.
 type: interactive
 theme: ai-agents
 best_for:

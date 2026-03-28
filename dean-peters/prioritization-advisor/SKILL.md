@@ -1,6 +1,9 @@
 ---
 name: prioritization-advisor
-description: Guide product managers in choosing the right prioritization framework by asking adaptive questions about product stage, team context, decision-making needs, and stakeholder dynamics. Use this to avoid
+description: >-
+  Guide product managers in choosing the right prioritization framework by asking adaptive questions about product stage, team context, decision-making needs, and stakeholder dynamics.
+  Use when you need to prioritize individual features or initiatives and want help choosing the right framework (RICE, ICE, value vs. effort, etc.).
+  DO NOT use for strategic roadmap planning — use roadmap-planning instead. DO NOT use for financial feature evaluation — use feature-investment-advisor instead.
 type: interactive
 ---
 

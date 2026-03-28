@@ -1,6 +1,9 @@
 ---
 name: prd-development
-description: Guide product managers through structured PRD (Product Requirements Document) creation by orchestrating problem framing, user research synthesis, solution definition, and success criteria into a cohes
+description: >-
+  Guide product managers through structured PRD (Product Requirements Document) creation by orchestrating problem framing, user research synthesis, solution definition, and success criteria into a cohesive document.
+  Use when writing a complete PRD from scratch or structuring product requirements for an engineering handoff.
+  DO NOT use for hypothesis framing — use epic-hypothesis instead. DO NOT use for roadmap-level planning — use roadmap-planning instead.
 type: workflow
 theme: pm-artifacts
 best_for:

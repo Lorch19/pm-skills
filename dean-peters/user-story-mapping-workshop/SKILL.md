@@ -1,6 +1,9 @@
 ---
 name: user-story-mapping-workshop
-description: Guide product managers through creating a user story map by asking adaptive questions about the system, users, workflow, and priorities—then generating a two-dimensional map with backbone (activitie
+description: >-
+  Guide product managers through creating a user story map by asking adaptive questions about the system, users, workflow, and priorities—then generating a two-dimensional map with backbone (activities), user tasks, and release slices.
+  Use when you need a facilitated, interactive session to discover and build a story map from scratch with guided questions.
+  DO NOT use when you already have the workflow mapped out — use user-story-mapping instead.
 type: interactive
 ---
 

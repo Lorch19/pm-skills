@@ -1,6 +1,9 @@
 ---
 name: business-health-diagnostic
-description: Diagnose SaaS business health using key metrics, identify red flags, and prioritize actions. Analyzes growth, retention, efficiency, and capital health.
+description: >-
+  Diagnose SaaS business health using key metrics, identify red flags, and prioritize actions. Analyzes growth, retention, efficiency, and capital health.
+  Use when you need a comprehensive health scorecard across all business dimensions, preparing for board meetings, or identifying which metrics are red flags.
+  DO NOT use for quick formula lookup — use finance-metrics-quickref instead. DO NOT use for deep dives into a single metric family — use saas-revenue-growth-metrics or saas-economics-efficiency-metrics instead.
 type: interactive
 theme: finance-metrics
 best_for:

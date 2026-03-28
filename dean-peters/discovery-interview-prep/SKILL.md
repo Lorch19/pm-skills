@@ -1,6 +1,9 @@
 ---
 name: discovery-interview-prep
-description: Guide product managers through preparing for customer discovery interviews by asking adaptive questions about research goals, customer segments, constraints, and methodologies. Use this to design effe
+description: >-
+  Guide product managers through preparing for customer discovery interviews by asking adaptive questions about research goals, customer segments, constraints, and methodologies.
+  Use when preparing for upcoming customer interviews and you need an interview plan, question framework, and methodology recommendation.
+  DO NOT use when you need a full end-to-end discovery cycle — use discovery-process instead.
 type: interactive
 theme: discovery-research
 best_for:

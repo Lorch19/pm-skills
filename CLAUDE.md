@@ -1,11 +1,11 @@
 # PM & Founder Skills Stack
 
-Your curated Claude skills stack for product management, strategy, research, and entrepreneurship.
+Curated Claude skills for product management, strategy, research, and entrepreneurship. Each pack includes a `NAVIGATOR.md` — start there to find the right skill.
 
 ## Installed Skill Packs
 
 ### 1. Dean Peters PM Frameworks (`dean-peters/`)
-46 battle-tested product management frameworks.
+44 battle-tested product management frameworks. See `dean-peters/NAVIGATOR.md` for the full decision tree.
 
 **Key skills:**
 - `prd-development` — Write PRDs using best-practice templates
@@ -21,9 +21,10 @@ Your curated Claude skills stack for product management, strategy, research, and
 - `company-research` — Deep company intelligence
 - `saas-revenue-growth-metrics` — SaaS metrics analysis
 - `press-release` — Amazon Working Backwards
+- `career-growth-advisor` — PM→Director→VP/CPO career transitions
 
 ### 2. Compound PM Agents (`compound-pm/`)
-Multi-agent PM system that compounds with each use.
+Multi-agent PM system that compounds with each use. See `compound-pm/NAVIGATOR.md` for command reference.
 
 **Key commands:**
 - `/pm:spec` — Write specs with parallel agent review
@@ -40,18 +41,16 @@ Multi-agent PM system that compounds with each use.
 - `vision-narrative` — Craft compelling product vision
 - `stakeholder-buyin` — Stakeholder alignment tactics
 
-### 3. Alireza's Domain Skills (`alireza/`)
-Specialist skills for founder/consultant workflows.
+### 3. Alireza Domain Skills (`alireza/`)
+6 specialist skills with 11 Python scripts for founder/consultant workflows. See `alireza/NAVIGATOR.md` for script reference.
 
 **Key skills:**
-- `competitive-teardown` — Deep competitive analysis
-- `product-strategist` — Senior product strategy
-- `marketing-strategy-pmm` — GTM and positioning
-- `marketing-demand-acquisition` — Growth and demand gen
-- `financial-analyst` — Financial modeling and analysis
-- `revenue-operations` — RevOps and pipeline optimization
-- `ceo-advisor` — Executive decision-making frameworks
-- `product-manager-toolkit` — PM tools and processes
+- `competitive-teardown` — Deep competitive analysis with scoring
+- `financial-analyst` — Financial modeling (DCF, ratios, variance, forecasting) + 4 Python scripts
+- `revenue-operations` — RevOps and pipeline optimization + 3 Python scripts
+- `marketing-strategy-pmm` — GTM, launch plans, battlecards, sales enablement
+- `marketing-demand-acquisition` — Paid media, SEO, partnerships, attribution
+- `product-manager-toolkit` — RICE prioritization + customer interview analysis scripts
 
 ### 4. Context Management (`context-management/`)
 Context management system for AI coding agents (Claude Code, Cursor, etc.). Maintains project context across sessions with two lean files + on-demand docs.
@@ -71,10 +70,11 @@ Context management system for AI coding agents (Claude Code, Cursor, etc.). Main
 | Competitive research | `alireza/competitive-teardown` |
 | Strategy session | `compound-pm` → `/pm:strategy` |
 | Market sizing | `dean-peters/tam-sam-som-calculator` |
-| Pitch/fundraising | `alireza/product-strategist` + `dean-peters/press-release` |
+| Pitch/fundraising | `dean-peters/press-release` + `dean-peters/positioning-workshop` |
 | Roadmap | `dean-peters/roadmap-planning` |
 | Discovery | `dean-peters/discovery-process` |
 | Metrics | `compound-pm/skills/metrics-design` |
 | GTM | `alireza/marketing-strategy-pmm` |
 | Financial model | `alireza/financial-analyst` |
+| Career transition | `dean-peters/career-growth-advisor` |
 | Context management | `context-management` |

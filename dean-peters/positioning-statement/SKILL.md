@@ -1,6 +1,9 @@
 ---
 name: positioning-statement
-description: Create a Geoffrey Moore-style positioning statement that clearly articulates who your product serves, what need it addresses, how it's categorized, what benefit it delivers, and how it differs from al
+description: >-
+  Create a Geoffrey Moore-style positioning statement that clearly articulates who your product serves, what need it addresses, how it's categorized, what benefit it delivers, and how it differs from alternatives.
+  Use when you already have positioning context (target customer, need, differentiation) and need to write the positioning statement artifact.
+  DO NOT use when you need facilitated discovery — use positioning-workshop instead.
 type: component
 theme: strategy-positioning
 best_for:

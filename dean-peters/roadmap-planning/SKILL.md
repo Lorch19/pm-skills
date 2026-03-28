@@ -1,6 +1,9 @@
 ---
 name: roadmap-planning
-description: Guide product managers through strategic roadmap planning by orchestrating prioritization, epic definition, stakeholder alignment, and release sequencing skills into a structured process. Use this to 
+description: >-
+  Guide product managers through strategic roadmap planning by orchestrating prioritization, epic definition, stakeholder alignment, and release sequencing skills into a structured process.
+  Use when building a quarterly or half-year roadmap, sequencing work across teams, or preparing a roadmap for exec review.
+  DO NOT use for individual feature prioritization — use prioritization-advisor instead. DO NOT use for full product strategy — use product-strategy-session instead.
 type: workflow
 theme: strategy-positioning
 best_for:

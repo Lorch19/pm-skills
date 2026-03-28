@@ -1,6 +1,9 @@
 ---
 name: discovery-process
-description: Guide product managers through a complete discovery cycle—from initial problem hypothesis to validated solution—by orchestrating problem framing, customer interviews, synthesis, and experimentatio
+description: >-
+  Guide product managers through a complete discovery cycle—from initial problem hypothesis to validated solution—by orchestrating problem framing, customer interviews, synthesis, and experimentation into a structured process.
+  Use when running a full discovery cycle from hypothesis to validated solution, investigating retention or churn problems, or setting up continuous discovery.
+  DO NOT use for interview prep alone — use discovery-interview-prep instead. DO NOT use for a single problem statement — use problem-statement instead.
 type: workflow
 theme: discovery-research
 best_for:

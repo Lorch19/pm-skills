@@ -1,6 +1,9 @@
 ---
 name: problem-statement
-description: Articulate a problem from the user's perspective using an empathy-driven framework that captures who they are, what they're trying to do, what's blocking them, why, and how it makes them feel. Use thi
+description: >-
+  Articulate a problem from the user's perspective using an empathy-driven framework that captures who they are, what they're trying to do, what's blocking them, why, and how it makes them feel.
+  Use when you need to write a single, concise problem statement to align stakeholders before jumping to solutions.
+  DO NOT use when you need a full problem-space exploration with bias checking — use problem-framing-canvas instead.
 type: component
 ---
 

@@ -1,6 +1,9 @@
 ---
 name: product-riff
-description: Explore product news, launches, and announcements from multiple strategic angles to build product sense. Use when riffing on industry news, analyzing competitor moves, or training strategic thinking muscle.
+description: >-
+  Explore product news, launches, and announcements from multiple strategic angles to build product sense.
+  Use when analyzing a product launch, competitive move, or market shift from multiple strategic angles.
+  DO NOT use for structured competitive intelligence — use competitive-teardown instead.
 ---
 
 # Product Riff Skill

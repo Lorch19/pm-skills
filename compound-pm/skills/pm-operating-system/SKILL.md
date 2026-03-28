@@ -1,6 +1,8 @@
 ---
 name: pm-operating-system
-description: Load and apply the PM's personalized operating system from pm-profile.yaml. Use when any /pm: command needs to adapt to the PM's frameworks, vocabulary, and past patterns.
+description: >-
+  Load and apply the PM's personalized operating system from pm-profile.yaml.
+  Use when setting up or customizing your PM workflow. Requires pm-profile.yaml.
 ---
 
 # PM Operating System Skill

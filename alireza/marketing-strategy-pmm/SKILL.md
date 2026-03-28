@@ -1,6 +1,9 @@
 ---
 name: marketing-strategy-pmm
-description: Product marketing skill for positioning, GTM strategy, competitive intelligence, and product launches. Covers April Dunford positioning, ICP definition, competitive battlecards, launch playbooks, and international market entry.
+description: >-
+  Product marketing skill for positioning, GTM strategy, competitive intelligence, and product launches. Covers April Dunford positioning, ICP definition, competitive battlecards, launch playbooks, and international market entry.
+  Use when building GTM strategy, launch plans, battlecards, or sales enablement.
+  DO NOT use for demand gen execution — use marketing-demand-acquisition instead.
 triggers:
   - product marketing
   - PMM

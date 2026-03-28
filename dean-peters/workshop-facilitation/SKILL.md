@@ -1,6 +1,9 @@
 ---
 name: workshop-facilitation
-description: Facilitate workshop sessions in a multi-turn, one-step flow with numbered recommendations at decision points and quick-select options for regular questions.
+description: >-
+  Facilitate workshop sessions in a multi-turn, one-step flow with numbered recommendations at decision points and quick-select options for regular questions.
+  Use when you need to add structured facilitation to any PM workshop or guided session with progress tracking and adaptive recommendations.
+  DO NOT use as a standalone workshop — use a domain-specific workshop skill (positioning-workshop, customer-journey-mapping-workshop, user-story-mapping-workshop) instead.
 type: interactive
 theme: workshops-facilitation
 best_for:

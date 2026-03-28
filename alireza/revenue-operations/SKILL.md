@@ -1,6 +1,9 @@
 ---
 name: revenue-operations
-description: Analyzes pipeline coverage, tracks forecast accuracy with MAPE, and calculates GTM efficiency metrics for SaaS revenue optimization
+description: >-
+  Analyzes pipeline coverage, tracks forecast accuracy with MAPE, and calculates GTM efficiency metrics for SaaS revenue optimization.
+  Use when analyzing pipeline health, forecast accuracy, or GTM efficiency. Includes Python scripts.
+  DO NOT use for revenue metric definitions — use dean-peters saas-revenue-growth-metrics instead.
 ---
 
 # Revenue Operations

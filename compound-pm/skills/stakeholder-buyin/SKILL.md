@@ -1,6 +1,9 @@
 ---
 name: stakeholder-buyin
-description: Apply proven buy-in techniques to align stakeholders on product direction. Covers framing, social proof, goal seek, inception, citation, and narration. Use when building alignment for initiatives.
+description: >-
+  Apply proven buy-in techniques to align stakeholders on product direction. Covers framing, social proof, goal seek, inception, citation, and narration.
+  Use when you need to influence stakeholders on a specific decision.
+  DO NOT use for general communication or presentation skills.
 ---
 
 # Stakeholder Buy-In Skill

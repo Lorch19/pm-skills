@@ -1,6 +1,9 @@
 ---
 name: opportunity-solution-tree
-description: Guide product managers through creating an Opportunity Solution Tree (OST) by extracting target outcomes from stakeholder requests, generating opportunity options (problems to solve), mapping potentia
+description: >-
+  Guide product managers through creating an Opportunity Solution Tree (OST) by extracting target outcomes from stakeholder requests, generating opportunity options (problems to solve), mapping potential solutions, and selecting the best proof-of-concept.
+  Use when moving from vague product requests to structured discovery, connecting business outcomes to customer opportunities and testable solutions.
+  DO NOT use for full end-to-end discovery — use discovery-process instead. DO NOT use for prioritizing a known backlog — use prioritization-advisor instead.
 type: interactive
 ---
 

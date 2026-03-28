@@ -1,6 +1,9 @@
 ---
 name: strategy-craft
-description: Segmentation, differentiation, and strategic thinking frameworks. Use when building product strategy, analyzing competition, or making strategic bets.
+description: >-
+  Segmentation, differentiation, and strategic thinking frameworks.
+  Use when developing product strategy, segmentation, or competitive positioning.
+  DO NOT use for OKR setting or roadmap planning.
 ---
 
 # Strategy Craft Skill

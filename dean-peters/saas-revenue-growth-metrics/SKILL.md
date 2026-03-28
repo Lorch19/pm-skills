@@ -1,6 +1,9 @@
 ---
 name: saas-revenue-growth-metrics
-description: Calculate and interpret revenue, retention, and growth metrics for SaaS products. Covers revenue, ARPU/ARPA, MRR/ARR, churn, NRR, expansion, and cohort analysis.
+description: >-
+  Calculate and interpret revenue, retention, and growth metrics for SaaS products. Covers revenue, ARPU/ARPA, MRR/ARR, churn, NRR, expansion, and cohort analysis.
+  Use when you need deep analysis of revenue and retention metrics, building a metrics dashboard, or preparing a board deck with SaaS growth data.
+  DO NOT use for quick formula lookup — use finance-metrics-quickref instead. DO NOT use for unit economics and capital efficiency — use saas-economics-efficiency-metrics instead.
 type: component
 theme: finance-metrics
 best_for:

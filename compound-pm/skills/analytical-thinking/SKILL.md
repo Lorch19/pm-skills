@@ -1,6 +1,9 @@
 ---
 name: analytical-thinking
-description: North Star Metrics, ecosystem analysis, goal-setting, and tradeoff frameworks. Use when defining metrics, setting team goals, or resolving product tradeoffs.
+description: >-
+  North Star Metrics, ecosystem analysis, goal-setting, and tradeoff frameworks.
+  Use when defining North Star Metrics, setting team goals, or resolving product tradeoffs.
+  DO NOT use for detailed metrics hierarchies or measurement plans — use metrics-design instead.
 ---
 
 # Analytical Thinking Skill

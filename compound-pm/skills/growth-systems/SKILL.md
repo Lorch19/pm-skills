@@ -1,6 +1,8 @@
 ---
 name: growth-systems
-description: Growth loops, retention frameworks, viral mechanics, and acquisition models. Use when designing growth engines, diagnosing retention problems, or evaluating acquisition strategies.
+description: >-
+  Growth loops, retention frameworks, viral mechanics, and acquisition models.
+  Use when designing or diagnosing growth loops, viral mechanics, or retention frameworks.
 ---
 
 # Growth Systems Skill

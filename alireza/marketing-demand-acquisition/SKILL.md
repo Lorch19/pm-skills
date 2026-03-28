@@ -1,6 +1,9 @@
 ---
 name: marketing-demand-acquisition
-description: Multi-channel demand generation, paid media optimization, SEO strategy, and partnership programs for Series A+ startups
+description: >-
+  Multi-channel demand generation, paid media optimization, SEO strategy, and partnership programs for Series A+ startups.
+  Use when planning paid media, SEO, partnerships, or attribution for Series A+ growth.
+  DO NOT use for strategic positioning — use marketing-strategy-pmm or dean-peters positioning-workshop instead.
 triggers:
   - demand gen
   - demand generation
