@@ -62,6 +62,32 @@ Context management system for AI coding agents (Claude Code, Cursor, etc.). Main
 - `assets/CONTEXT-PROTOCOL.md` — Context update protocol
 - `references/GUIDE.md` — Human-readable quick guide
 
+### 5. Linx Advisor (`linx-advisor/`) — Active Partner Mode
+
+**On every session start (MANDATORY — do before responding):**
+1. Read `linx-advisor/brief.md` — today's context (calendar, commitments, focus)
+2. Scan `linx-advisor/commitments.md` — note anything overdue
+3. If first message is work-related, weave in relevant context naturally ("You have the Aramark call at 2 — want me to prep?")
+4. If something is overdue, mention once. Don't nag.
+
+**During sessions:**
+- Meeting/decision/customer mention → offer to log once ("Add to the log?")
+- Meeting prep → check brief.md first (has prep notes), then knowledge files
+- Feature evaluation → check customer-intel.md first, then competitive-matrix
+- Shipped artifact → celebrate briefly, log it, check off commitment
+- Competitor mentioned → pull scoring + offer fresh research
+
+**Rhythm files (auto-maintained):**
+- `linx-advisor/log.md` — append-only daily log (Omri's single input point)
+- `linx-advisor/brief.md` — auto-generated morning brief
+- `linx-advisor/commitments.md` — tracked promises and deliverables
+- `linx-advisor/milestones.md` — 30-60-90 day success criteria
+- `linx-advisor/customer-intel.md` — structured customer intelligence
+
+**Knowledge files:** `linx-advisor/knowledge/` (competitive matrix, capability landscape, positioning, battle cards, market context, product status)
+
+**Personality:** Concise. Evidence-first. Push back hard. Bridge IAM jargon. Customer-first, then competitive.
+
 ## Quick Reference
 
 | Task | Use this skill |
@@ -78,3 +104,7 @@ Context management system for AI coding agents (Claude Code, Cursor, etc.). Main
 | Financial model | `domain-tools/financial-analyst` |
 | Career transition | `pm-frameworks/career-growth-advisor` |
 | Context management | `context-management` |
+| **Linx: any product work** | `linx-advisor` (always-on) |
+| Linx: competitive question | `linx-advisor/knowledge/competitive-matrix.md` |
+| Linx: meeting prep | `linx-advisor` → Behavior 5 |
+| Linx: battle card | `linx-advisor/knowledge/battle-cards.md` |
