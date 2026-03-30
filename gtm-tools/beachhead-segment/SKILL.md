@@ -1,6 +1,11 @@
 ---
 name: beachhead-segment
 description: "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy."
+type: workflow
+best_for:
+  - "Choosing a first market for a new product"
+  - "Scoring segments for market entry"
+  - "Geoffrey Moore beachhead strategy"
 ---
 # Beachhead Segment
 
@@ -125,6 +130,14 @@ A beachhead segment analysis including:
 
 ## Framework
 Based on Geoffrey Moore's beachhead market strategy in "Crossing the Chasm." Focuses on finding the smallest winnable, referenceable market that validates PMF and enables expansion.
+
+## What NOT to Do
+
+- **Don't pick a segment just because it's big.** A $10B TAM where you win 0.01% is worse than a $50M niche where you capture 60%. Beachheads are about dominance, not size.
+- **Don't skip pain validation with real customers.** Desk research and intuition aren't enough — talk to at least 10 people in the segment before committing.
+- **Don't confuse "interesting market" with "winnable market."** If two well-funded incumbents own the segment, it's not a beachhead no matter how painful the problem is.
+- **Don't optimize for multiple segments simultaneously.** The whole point of a beachhead is ruthless focus. One segment. All resources. Dominate, then expand.
+- **Don't ignore the referral pathway.** A segment that can't reference you to adjacent markets is a dead end, not a beachhead.
 
 ## Tips
 - Start absurdly specific. A niche beachhead is better than a vague mass market

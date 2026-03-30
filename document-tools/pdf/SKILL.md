@@ -2,9 +2,37 @@
 name: pdf
 description: Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.
 license: Proprietary. LICENSE.txt has complete terms
+type: tool
+best_for:
+  - "Reading or extracting text/tables from PDFs"
+  - "Merging, splitting, rotating PDF pages"
+  - "Creating new PDFs from scratch"
+  - "Filling PDF forms"
+  - "OCR on scanned documents"
 ---
 
 # PDF Processing Guide
+
+## Decision Matrix — Pick the Right Tool
+
+| Task | Best Tool | Why |
+|------|-----------|-----|
+| **Read/extract text** | `pdfplumber` | Preserves layout, handles columns |
+| **Extract tables** | `pdfplumber` + `pandas` | Best table detection of any Python lib |
+| **Merge/split/rotate** | `pypdf` | Lightweight, no external deps |
+| **Create new PDFs** | `reportlab` | Full layout control, multi-page support |
+| **Fill PDF forms** | See `FORMS.md` | `pdf-lib` (JS) or `pypdf` depending on form type |
+| **Add watermarks** | `pypdf` | Simple page merge approach |
+| **Password protect/decrypt** | `pypdf` (simple) or `qpdf` (CLI) | pypdf for Python, qpdf for shell scripts |
+| **OCR scanned PDFs** | `pytesseract` + `pdf2image` | Convert to images first, then OCR |
+| **Extract images** | `pdfimages` (CLI, poppler-utils) | Fastest, preserves original format |
+| **Quick CLI operations** | `qpdf` or `pdftk` | No Python needed, scriptable |
+
+### What NOT to Use This For
+
+- **Reading a PDF to answer questions about it** — just use the `Read` tool directly, Claude can read PDFs natively
+- **Creating formatted documents** — if the output doesn't need to be PDF, consider `docx` (Word) instead for easier editing
+- **Spreadsheet data trapped in a PDF** — extract tables first, then use `xlsx` skill to build a proper spreadsheet
 
 ## Overview
 

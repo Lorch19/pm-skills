@@ -1,6 +1,11 @@
 ---
 name: competitive-battlecard
 description: "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating competitive materials, or responding to 'why not competitor X?'"
+type: tool
+best_for:
+  - "Sales enablement against a specific competitor"
+  - "Objection handling and talk tracks"
+  - "Win/loss pattern analysis"
 ---
 
 ## Competitive Battlecard
@@ -67,6 +72,13 @@ Use web search to research the competitor's current product, pricing, positionin
    - Key differentiator in competitive deals: [what tips the scale]
 
 3. **Keep it scannable**: Sales reps need to reference this during calls. Use tables, bold text, and short bullets.
+
+4. **What NOT to include**:
+   - **Don't trash the competitor.** Reps who badmouth competitors lose credibility. Focus on differentiation, not disparagement.
+   - **Don't list features the prospect didn't ask about.** A battlecard is a response tool, not a feature dump.
+   - **Don't use stale data.** If the competitor launched a new product last month, the battlecard needs updating. Flag the "last updated" date prominently.
+   - **Don't ignore where they win.** Sales reps who can't acknowledge competitor strengths get caught off guard. Honest "where they win" sections build trust.
+   - **Don't make it longer than 2 pages.** If a rep can't scan it during a call, it's useless.
 
 Save as markdown. Format for easy printing or sharing in Notion/Confluence.
 

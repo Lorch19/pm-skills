@@ -4,6 +4,12 @@ description: >-
   Segmentation, differentiation, and strategic thinking frameworks.
   Use when developing product strategy, segmentation, or competitive positioning.
   DO NOT use for OKR setting or roadmap planning.
+type: component
+best_for:
+  - "Developing product strategy from scratch"
+  - "Needs-based market segmentation"
+  - "Competitive differentiation analysis"
+  - "Applying Hamilton Helmer's 7 Powers"
 ---
 
 # Strategy Craft Skill
@@ -118,6 +124,36 @@ The most important part of strategy:
 | **Table stakes** | "We'll maintain parity on [features] but won't differentiate here" |
 | **Below table stakes** | "Competitors do [X] and we deliberately don't because..." |
 | **Reassessment triggers** | "We'd reprioritize if [specific market change]" |
+
+## How to Write a Strategy (Step by Step)
+
+### Step 1: Start with Segmentation
+Identify 3-5 candidate segments using needs-based dimensions. For each, answer: What specific problem do they need solved? How do they currently solve it? Score each segment on reach, underserved degree, differentiation potential, and ease of targeting. Run the 5-point validation test on your top picks.
+
+### Step 2: Choose Your Priority Segment
+Pick the segment where you can win decisively. You're looking for the intersection of: acute pain, weak alternatives, and your unique ability to serve them. Write one sentence: "We serve [segment] because [reason we can win here that others can't]."
+
+### Step 3: Map the Competitive Landscape
+List what your priority segment currently uses (including "do nothing"). For each alternative, identify which of the 7 Powers you could build against them. Focus on powers that compound over time (network effects, switching costs, process power) over one-time advantages.
+
+### Step 4: Define Your Differentiation
+Classify every capability as Differentiator, MMR (minimum market requirement), or Neutralizer. Invest heavily in differentiators, build MMRs to parity, and build neutralizers to "good enough." Your strategy lives in the differentiators — everything else is table stakes.
+
+### Step 5: Write the Strategy Document
+Use the Full Strategy Structure template below. The most important section is Non-Priorities — if you can't articulate what you're NOT doing, your strategy isn't making real choices.
+
+### Step 6: Stress Test
+Run the 5 tests below. If any test fails, go back and sharpen.
+
+## What NOT to Do
+
+- **Don't segment by demographics.** "Enterprise companies" is not a segment. "Teams managing 50+ third-party vendors with no centralized access governance" is a segment.
+- **Don't list everything as a priority.** If your strategy has 8 pillars, it has zero. Limit to 2-4 strategic bets.
+- **Don't write a strategy a competitor could copy.** "We'll build the best product with great UX" is not differentiated.
+- **Don't skip the Non-Priorities section.** A strategy that doesn't say no to anything isn't a strategy.
+- **Don't confuse MMRs with differentiators.** Building what competitors already have is catch-up, not strategy.
+
+---
 
 ## Strategy Stress Test
 

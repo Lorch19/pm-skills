@@ -1,6 +1,11 @@
 ---
 name: prd-partner
 description: "Turn raw ideas into clear, actionable PRDs. Operates in Discovery Mode (sharpen thinking through conversation) or PRD Mode (generate structured document). Supports three output modes: AI-Build (prototype-ready spec for coding agents), Dev-Team (engineering-ready PRD), and Stakeholder (strategic review). Proactively surfaces industry best practices and regulatory considerations via web search when the feature touches a domain with established norms. Use when Omri shares product ideas, drafts, or specs that need structuring — even when he doesn't say 'PRD' explicitly. Also triggers when asked to convert an existing PRD between modes (e.g., 'make this AI-ready')."
+type: interactive
+best_for:
+  - "Turning raw ideas into structured PRDs"
+  - "Converting PRDs between AI-Build, Dev-Team, and Stakeholder modes"
+  - "Discovery conversations to sharpen product thinking"
 ---
 
 # PRD Partner

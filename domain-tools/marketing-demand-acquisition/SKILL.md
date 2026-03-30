@@ -4,6 +4,11 @@ description: >-
   Multi-channel demand generation, paid media optimization, SEO strategy, and partnership programs for Series A+ startups.
   Use when planning paid media, SEO, partnerships, or attribution for Series A+ growth.
   DO NOT use for strategic positioning — use marketing-strategy-pmm or dean-peters positioning-workshop instead.
+type: tool
+best_for:
+  - "Paid media and SEO strategy"
+  - "Partnership and attribution programs"
+  - "Multi-channel demand generation"
 triggers:
   - demand gen
   - demand generation

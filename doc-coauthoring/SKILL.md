@@ -1,6 +1,11 @@
 ---
 name: doc-coauthoring
 description: Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.
+type: workflow
+best_for:
+  - "Co-authoring technical specs, decision docs, proposals"
+  - "Structured document creation with reader testing"
+  - "Iterative refinement of complex documentation"
 ---
 
 # Doc Co-Authoring Workflow
@@ -241,94 +246,31 @@ Ask if ready to move to Reader Testing, or if they want to refine anything else.
 
 ## Stage 3: Reader Testing
 
-**Goal:** Test the document with a fresh Claude (no context bleed) to verify it works for readers.
-
-**Instructions to user:**
-Explain that testing will now occur to see if the document actually works for readers. This catches blind spots - things that make sense to the authors but might confuse others.
-
-### Testing Approach
-
-**If access to sub-agents is available (e.g., in Claude Code):**
-
-Perform the testing directly without user involvement.
+**Goal:** Test the document with a fresh Claude (no context bleed) to verify it works for readers. This catches blind spots — things that make sense to the authors but might confuse others.
 
 ### Step 1: Predict Reader Questions
 
-Announce intention to predict what questions readers might ask when trying to discover this document.
+Generate 5-10 questions that readers would realistically ask when encountering this document. What would they type into Claude or search for?
 
-Generate 5-10 questions that readers would realistically ask.
+### Step 2: Test the Questions
 
-### Step 2: Test with Sub-Agent
+**With sub-agents (Claude Code, Cowork):** For each question, invoke a sub-agent with just the document content and the question — no context from this conversation. Also run a sub-agent to check for ambiguity, false assumptions, and contradictions. Summarize what Reader Claude got right/wrong.
 
-Announce that these questions will be tested with a fresh Claude instance (no context from this conversation).
+**Without sub-agents (claude.ai):** Guide the user to test manually:
+1. Open a fresh Claude conversation
+2. Paste or share the document content
+3. Ask the generated questions plus: "What might be ambiguous?", "What context does this doc assume?", "Any internal contradictions?"
 
-For each question, invoke a sub-agent with just the document content and the question.
+### Step 3: Fix Gaps
 
-Summarize what Reader Claude got right/wrong for each question.
+If Reader Claude struggled with any questions or surfaced issues:
+1. List the specific problems
+2. Loop back to Stage 2 refinement for the problematic sections
+3. Re-test after fixes
 
-### Step 3: Run Additional Checks
+### Exit Condition
 
-Announce additional checks will be performed.
-
-Invoke sub-agent to check for ambiguity, false assumptions, contradictions.
-
-Summarize any issues found.
-
-### Step 4: Report and Fix
-
-If issues found:
-Report that Reader Claude struggled with specific issues.
-
-List the specific issues.
-
-Indicate intention to fix these gaps.
-
-Loop back to refinement for problematic sections.
-
----
-
-**If no access to sub-agents (e.g., claude.ai web interface):**
-
-The user will need to do the testing manually.
-
-### Step 1: Predict Reader Questions
-
-Ask what questions people might ask when trying to discover this document. What would they type into Claude.ai?
-
-Generate 5-10 questions that readers would realistically ask.
-
-### Step 2: Setup Testing
-
-Provide testing instructions:
-1. Open a fresh Claude conversation: https://claude.ai
-2. Paste or share the document content (if using a shared doc platform with connectors enabled, provide the link)
-3. Ask Reader Claude the generated questions
-
-For each question, instruct Reader Claude to provide:
-- The answer
-- Whether anything was ambiguous or unclear
-- What knowledge/context the doc assumes is already known
-
-Check if Reader Claude gives correct answers or misinterprets anything.
-
-### Step 3: Additional Checks
-
-Also ask Reader Claude:
-- "What in this doc might be ambiguous or unclear to readers?"
-- "What knowledge or context does this doc assume readers already have?"
-- "Are there any internal contradictions or inconsistencies?"
-
-### Step 4: Iterate Based on Results
-
-Ask what Reader Claude got wrong or struggled with. Indicate intention to fix those gaps.
-
-Loop back to refinement for any problematic sections.
-
----
-
-### Exit Condition (Both Approaches)
-
-When Reader Claude consistently answers questions correctly and doesn't surface new gaps or ambiguities, the doc is ready.
+Reader Claude consistently answers questions correctly and doesn't surface new gaps or ambiguities. The doc is ready.
 
 ## Final Review
 
@@ -346,6 +288,14 @@ Announce document completion. Provide a few final tips:
 - Consider linking this conversation in an appendix so readers can see how the doc was developed
 - Use appendices to provide depth without bloating the main doc
 - Update the doc as feedback is received from real readers
+
+## What NOT to Do
+
+- **Don't skip context gathering.** Jumping straight to drafting produces generic docs that miss organizational nuance.
+- **Don't reprint the whole doc after small edits.** Use `str_replace` for surgical changes — reprinting wastes context and makes it harder to track what changed.
+- **Don't use artifacts for brainstorming lists.** Lists belong in conversation; artifacts are for the document itself.
+- **Don't skip Reader Testing.** The authors always think the doc makes sense. Fresh-eyes testing catches the gaps that matter most.
+- **Don't force the workflow.** If the user wants to skip stages or work freeform, let them. The workflow serves the user, not the other way around.
 
 ## Tips for Effective Guidance
 

@@ -1,6 +1,11 @@
 ---
 name: growth-loops
 description: "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work."
+type: workflow
+best_for:
+  - "Designing product-led growth flywheels"
+  - "Reducing reliance on paid acquisition"
+  - "Evaluating viral, referral, and collaboration loops"
 ---
 # Growth Loops
 
@@ -108,6 +113,14 @@ A growth loops analysis including:
 
 ## Framework
 Based on growth loops research by Ognjen Bošković. Focuses on compounding user acquisition through built-in, product-native sharing and collaboration mechanisms.
+
+## What NOT to Do
+
+- **Don't design loops before achieving product-market fit.** Growth loops amplify what's already working. If the core value prop is weak, a viral loop just spreads disappointment faster.
+- **Don't force a loop that doesn't match your product.** Not every product is inherently shareable. A payroll tool won't go viral on social media — but it might have a strong collaboration loop within organizations.
+- **Don't optimize loop mechanics before validating the trigger.** The fanciest referral program is worthless if users don't have a natural moment to share.
+- **Don't stack multiple loops simultaneously.** Master one loop before layering another. Each loop has its own metrics, failure modes, and optimization surface.
+- **Don't ignore loop economics.** A referral loop where CAC per referred user exceeds organic CAC is a cost center, not a growth engine. Always calculate the unit economics.
 
 ## Tips
 - Start with one loop and master it before adding complexity
