@@ -1,0 +1,8 @@
+{
+  "name": "design-tools",
+  "version": "1.0.0",
+  "description": "Accelerate product design workflows — critique, design system management, UX writing, accessibility audits, research synthesis, and dev handoff. From exploration to pixel-perfect specs.",
+  "author": {
+    "name": "Anthropic (adapted for Operator Kit)"
+  }
+}

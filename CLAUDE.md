@@ -23,6 +23,14 @@ Tools for building, shipping, and running products. PM frameworks, multi-agent w
 | Create/optimize skills | `meta-tools/skill-creator` | Meta Tools |
 | Plan an automation | `meta-tools/automation-planner` | Meta Tools |
 | **Linx: any product work** | `~/linx-advisor/` (standalone) | Linx Advisor |
+| Incident response | `engineering-tools/incident-response` | Engineering Tools |
+| Code review | `engineering-tools/code-review` | Engineering Tools |
+| Sales call prep | `sales-tools/call-prep` | Sales Tools |
+| Pipeline review | `sales-tools/pipeline-review` | Sales Tools |
+| Design critique | `design-tools/design-critique` | Design Tools |
+| Status report | `operations-tools/status-report` | Operations Tools |
+| Process documentation | `operations-tools/process-doc` | Operations Tools |
+| Build frontend UI | `meta-tools/frontend-design` | Meta Tools |
 
 ---
 
@@ -102,7 +110,7 @@ Go-to-market execution skills. From Pawel Huryn's PM Skills collection.
 - `competitive-battlecard` — Sales enablement battlecards (different from competitive-teardown analysis)
 - `growth-loops` — Self-reinforcing flywheel and growth loop design
 
-### 7. Meta Tools (`meta-tools/`) — NEW
+### 7. Meta Tools (`meta-tools/`)
 Skills for building and optimizing your toolkit itself.
 
 **Skills:**
@@ -110,14 +118,73 @@ Skills for building and optimizing your toolkit itself.
 - `web-artifacts-builder` — Build interactive React+shadcn HTML artifacts
 - `adr-writer` — Write Architecture Decision Records with structured rationale
 - `automation-planner` — Plan background automations with safety guards (timeouts, circuit breakers, monitoring)
+- `frontend-design` — Distinctive, production-grade frontend interfaces (anti-AI-slop aesthetics)
+- `internal-comms` — Status reports, 3P updates, newsletters, FAQs
+- `webapp-testing` — Playwright-based web app testing with screenshots
+- `security-guidance` — PreToolUse hook monitoring 9 security patterns (XSS, injection, eval)
 
-### 8. Doc Coauthoring (`doc-coauthoring/`) — NEW
+### 8. Operations Tools (`operations-tools/`)
+9 operational excellence skills from Anthropic's knowledge-work-plugins. `.claude-plugin` format. See `operations-tools/NAVIGATOR.md`.
+
+**Skills:**
+- `capacity-plan` — Workload analysis and utilization forecasting
+- `change-request` — Change management with impact analysis and rollback
+- `compliance-tracking` — SOC 2, ISO 27001, GDPR audit readiness
+- `process-doc` — SOPs, RACI matrices, flowcharts
+- `process-optimization` — Streamline inefficient workflows
+- `risk-assessment` — Identify, assess, and mitigate operational risks
+- `runbook` — Step-by-step operational procedures
+- `status-report` — Leadership updates with KPIs and risks
+- `vendor-review` — Vendor evaluation, TCO analysis, negotiation
+
+### 9. Engineering Tools (`engineering-tools/`)
+10 engineering workflow skills from Anthropic's knowledge-work-plugins. `.claude-plugin` format. See `engineering-tools/NAVIGATOR.md`.
+
+**Skills:**
+- `architecture` — ADRs and system design evaluation
+- `code-review` — Security, performance, correctness review
+- `debug` — Structured debugging (reproduce, isolate, diagnose, fix)
+- `deploy-checklist` — Pre/during/post deployment verification
+- `documentation` — READMEs, API docs, onboarding guides
+- `incident-response` — Triage, communicate, mitigate, postmortem
+- `standup` — Daily standup generation from activity
+- `system-design` — Requirements, architecture, scalability
+- `tech-debt` — Categorize and prioritize technical debt
+- `testing-strategy` — Test plans with pyramid approach
+
+### 10. Sales Tools (`sales-tools/`)
+9 sales workflow skills from Anthropic's knowledge-work-plugins. `.claude-plugin` format. See `sales-tools/NAVIGATOR.md`.
+
+**Skills:**
+- `account-research` — Company/person research with actionable intel
+- `call-prep` — Account context, attendee research, suggested agenda
+- `call-summary` — Notes/transcript → action items + follow-up email
+- `competitive-intelligence` — Interactive competitor battlecards
+- `create-an-asset` — Landing pages, decks, one-pagers for prospects
+- `daily-briefing` — Morning sales briefing with priorities
+- `draft-outreach` — Research-first personalized outreach
+- `forecast` — Weighted forecast with scenarios and gap analysis
+- `pipeline-review` — Pipeline health, deal prioritization, risk flags
+
+### 11. Design Tools (`design-tools/`)
+7 product design skills from Anthropic's knowledge-work-plugins. `.claude-plugin` format. See `design-tools/NAVIGATOR.md`.
+
+**Skills:**
+- `accessibility-review` — WCAG 2.1 AA accessibility audit
+- `design-critique` — Structured feedback on usability, hierarchy, consistency
+- `design-handoff` — Developer specs: tokens, states, responsive, edge cases
+- `design-system` — Audit, document, or extend design systems
+- `research-synthesis` — Distill interviews/surveys into themes and actions
+- `user-research` — Plan studies, interview guides, survey design
+- `ux-copy` — Microcopy, error messages, empty states, CTAs
+
+### 12. Doc Coauthoring (`doc-coauthoring/`)
 Structured co-authoring workflow with three phases: context gathering, section-by-section refinement, and fresh-eyes reader testing. Anthropic official skill.
 
-### 9. PRD Partner (`prd-partner/`)
+### 13. PRD Partner (`prd-partner/`)
 Personalized PRD creation skill. Discovery Mode (sharpen thinking) or PRD Mode (generate document). Three output modes: AI-Build, Dev-Team, Stakeholder.
 
-### 10. Context Management (`context-management/`)
+### 14. Context Management (`context-management/`)
 Context management system for AI coding agents (Claude Code, Cursor, etc.). Maintains project context across sessions with two lean files + on-demand docs.
 
 **Key files:**
@@ -127,7 +194,7 @@ Context management system for AI coding agents (Claude Code, Cursor, etc.). Main
 - `assets/CONTEXT-PROTOCOL.md` — Context update protocol
 - `references/GUIDE.md` — Human-readable quick guide
 
-### 11. Linx Advisor (standalone at `~/linx-advisor/`)
+### 15. Linx Advisor (standalone at `~/linx-advisor/`)
 
 Linx Advisor has been moved to its own standalone directory at `/Users/omrilorch/linx-advisor/`. It is no longer part of the operator-kit repo. See the linx-advisor directory directly for its SKILL.md, knowledge files, and rhythm files. 8 scheduled tasks maintain its daily/weekly cadence.
 
@@ -179,11 +246,54 @@ Linx Advisor has been moved to its own standalone directory at `/Users/omrilorch
 | Full pipeline | `/pm:lfg` |
 | Brainstorm | `/pm:riff` |
 | Simulate/stress-test | `/pm:simulate` |
+| **Operations** | |
+| Process documentation / SOP | `operations-tools/process-doc` |
+| Operational runbook | `operations-tools/runbook` |
+| Status report for leadership | `operations-tools/status-report` |
+| Risk assessment | `operations-tools/risk-assessment` |
+| Vendor evaluation | `operations-tools/vendor-review` |
+| Change management request | `operations-tools/change-request` |
+| Capacity planning | `operations-tools/capacity-plan` |
+| Compliance/audit tracking | `operations-tools/compliance-tracking` |
+| Process optimization | `operations-tools/process-optimization` |
+| **Engineering** | |
+| Architecture decision (ADR) | `engineering-tools/architecture` |
+| Code review | `engineering-tools/code-review` |
+| Debugging session | `engineering-tools/debug` |
+| Deploy checklist | `engineering-tools/deploy-checklist` |
+| Technical documentation | `engineering-tools/documentation` |
+| Incident response | `engineering-tools/incident-response` |
+| Standup update | `engineering-tools/standup` |
+| System design | `engineering-tools/system-design` |
+| Tech debt audit | `engineering-tools/tech-debt` |
+| Test strategy | `engineering-tools/testing-strategy` |
+| **Sales** | |
+| Account/prospect research | `sales-tools/account-research` |
+| Sales call prep | `sales-tools/call-prep` |
+| Call summary + follow-up | `sales-tools/call-summary` |
+| Competitive intelligence | `sales-tools/competitive-intelligence` |
+| Sales asset creation | `sales-tools/create-an-asset` |
+| Daily sales briefing | `sales-tools/daily-briefing` |
+| Draft outreach email | `sales-tools/draft-outreach` |
+| Sales forecast | `sales-tools/forecast` |
+| Pipeline review | `sales-tools/pipeline-review` |
+| **Design** | |
+| Accessibility audit | `design-tools/accessibility-review` |
+| Design critique/feedback | `design-tools/design-critique` |
+| Developer handoff specs | `design-tools/design-handoff` |
+| Design system management | `design-tools/design-system` |
+| Research synthesis | `design-tools/research-synthesis` |
+| User research planning | `design-tools/user-research` |
+| UX copy writing | `design-tools/ux-copy` |
 | **Meta / Tooling** | |
 | Create/optimize a skill | `meta-tools/skill-creator` |
 | Build interactive artifact | `meta-tools/web-artifacts-builder` |
 | Document a decision | `meta-tools/adr-writer` |
 | Plan an automation | `meta-tools/automation-planner` |
+| Build frontend UI | `meta-tools/frontend-design` |
+| Write internal comms | `meta-tools/internal-comms` |
+| Test a web app | `meta-tools/webapp-testing` |
+| Security guidance hook | `meta-tools/security-guidance` |
 | Context management | `context-management` |
 | Career transition | `pm-frameworks/career-growth-advisor` |
 | **Linx-Specific** | |

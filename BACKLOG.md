@@ -24,7 +24,11 @@
 - [ ] **Add NAVIGATOR.md to analytics-tools and gtm-tools** — pm-frameworks, domain-tools, and pm-agents each have a NAVIGATOR.md decision tree. analytics-tools (3 skills) and gtm-tools (3 skills) are missing one. Small packs but a navigator helps routing.
 - [ ] **Reduce doc-coauthoring to under 250 lines** — Currently 326 lines. The Stage 2 section (Refinement & Structure) is verbose with repeated step patterns. Consolidate the 6 sub-steps into a tighter loop description.
 - [ ] **Evaluate Telegram MCP integration** — Custom bot code per-project could be replaced with unified MCP. Would simplify notification layer across portfolio-system and scheduled tasks.
-- [ ] **Revisit plugin ecosystem** — Plugin system is early but maturing. michael (portfolio agent) and compound-pm (pm-agents) are natural migration candidates when ready. Both would benefit from slash commands and hooks.
+- [ ] **Migrate existing packs to .claude-plugin format** — New packs (operations, engineering, sales, design) use `.claude-plugin/plugin.json`. Older packs (pm-frameworks, domain-tools, analytics-tools, gtm-tools, meta-tools) still use SKILL.md only. Migration enables marketplace publishing and claude.ai compatibility. Start with meta-tools (most active).
+- [ ] **Add CONNECTORS.md to existing packs** — New packs use the `~~category` connector pattern for tool-agnostic integration. Add CONNECTORS.md to domain-tools, analytics-tools, and gtm-tools.
+- [ ] **Port financial-services-plugins deep models** — Anthropic's financial-services-plugins repo has 3-statement-model, DCF, LBO, comps-analysis, PE due diligence skills. Significantly deeper than current financial-analyst. Port as extension to domain-tools or new finance-tools pack.
+- [ ] **Evaluate claude-md-management plugin** — Anthropic's official plugin that audits/improves CLAUDE.md files and captures session learnings. Could enhance context-management skill.
+- [ ] **Add hooks support to operator-kit** — Security-guidance hook is added to meta-tools. Consider adding SessionStart hooks for auto-loading context and PreToolUse hooks for quality gates. Follow Anthropic's hookify pattern for creating hooks from conversation patterns.
 
 ## Non-priority
 
