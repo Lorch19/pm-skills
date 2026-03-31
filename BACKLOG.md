@@ -12,17 +12,18 @@
 
 ## Priority
 
-- [ ] **Split skill-creator into SKILL.md + references** — At 486 lines, skill-creator exceeds the 500-line guideline and reads like documentation. Extract the eval-viewer workflow, Claude.ai/Cowork-specific instructions, and description optimization into `references/` files. Keep SKILL.md under 300 lines with the core loop + pointers.
+- [x] **Split skill-creator into SKILL.md + references** — Done. 486→246 lines. Extracted eval-workflow, description-optimization, and environment-guides into `references/`.
 - [ ] **Add worked examples to pm-frameworks skills** — Several pm-frameworks skills (strategy-craft, prioritization-advisor, pestel-analysis, opportunity-solution-tree) reference templates without showing concrete output. Add a short "Example Output" section to the 5-10 most-used skills showing what good output looks like.
+- [x] **Extract shared CLAUDE.md boilerplate** — Done. Created `meta-tools/operational-discipline/SKILL.md` (88 lines). Projects can replace duplicated sections with a one-line pointer.
 - [ ] **Build `deploy-rsync` skill** — Codify the rsync+SSH deploy pattern from portfolio-system/scripts/deploy.sh into a reusable meta-tool. Mission: `missions/deploy-rsync-skill.md`
 - [ ] **Build `health-check-monitor` skill** — Unified cross-project health digest (VPS, Railway, scheduled tasks) → single Telegram message. Mission: `missions/health-check-monitor-skill.md`
 - [ ] **Evaluate Supabase MCP integration** — Direct DB queries and schema inspection for first-bloom-build + lorchprotfoliotracker.
-- [ ] **Extract shared CLAUDE.md boilerplate** — Co-founder persona, session discipline, operational protocol sections are identical across 5 projects. Move to `~/.claude/skills/operational-discipline/SKILL.md`, replace with one-line pointers.
+- [x] **Extract shared CLAUDE.md boilerplate** — Done. Created `meta-tools/operational-discipline/SKILL.md`. Projects still need pointer replacement (separate task).
 
 ## Strategic
 
-- [ ] **Add NAVIGATOR.md to analytics-tools and gtm-tools** — pm-frameworks, domain-tools, and pm-agents each have a NAVIGATOR.md decision tree. analytics-tools (3 skills) and gtm-tools (3 skills) are missing one. Small packs but a navigator helps routing.
-- [ ] **Reduce doc-coauthoring to under 250 lines** — Currently 326 lines. The Stage 2 section (Refinement & Structure) is verbose with repeated step patterns. Consolidate the 6 sub-steps into a tighter loop description.
+- [x] **Add NAVIGATOR.md to analytics-tools and gtm-tools** — Done. Both created with skill tables + cross-pack references.
+- [x] **Reduce doc-coauthoring to under 250 lines** — Done. 326→231 lines. Consolidated Stage 2 loop, condensed Tips and What NOT to Do.
 - [ ] **Evaluate Telegram MCP integration** — Custom bot code per-project could be replaced with unified MCP. Would simplify notification layer across portfolio-system and scheduled tasks.
 - [ ] **Migrate existing packs to .claude-plugin format** — New packs (operations, engineering, sales, design) use `.claude-plugin/plugin.json`. Older packs (pm-frameworks, domain-tools, analytics-tools, gtm-tools, meta-tools) still use SKILL.md only. Migration enables marketplace publishing and claude.ai compatibility. Start with meta-tools (most active).
 - [ ] **Add CONNECTORS.md to existing packs** — New packs use the `~~category` connector pattern for tool-agnostic integration. Add CONNECTORS.md to domain-tools, analytics-tools, and gtm-tools.
@@ -32,6 +33,6 @@
 
 ## Non-priority
 
-- [ ] **Add `type`/`best_for` to remaining pm-agents skills** — 12 of 13 pm-agents skills still lack `best_for` frontmatter (only strategy-craft has it). Low urgency since pm-agents routes via commands, but standardizing improves discoverability.
-- [ ] **Verify pdf skill references exist** — pdf/SKILL.md references `REFERENCE.md` and `FORMS.md`. Verify these files exist and are up to date; add a table of contents if they exceed 300 lines.
+- [x] **Add `type`/`best_for` to remaining pm-agents skills** — Done. All 12 skills now have `type: component` and 4 `best_for` entries each.
+- [x] **Verify pdf skill references exist** — Verified. `reference.md` (611 lines) and `forms.md` (294 lines) both exist and are populated.
 - [ ] **Build `fastapi-scaffold` skill** — Template for FastAPI+Uvicorn+Pydantic+Docker+health-check backend. Only justified when a 3rd project needs this pattern (currently 2: WatchTogether, IL-ecommerce).
