@@ -1,6 +1,6 @@
 # Mission: Create context-sync-setup Skill
 
-## Status: DRAFT
+## Status: READY
 
 <!--
 Status rules:
@@ -46,29 +46,29 @@ operator-kit/meta-tools/context-sync-setup/SKILL.md
 
 ### Decisions:
 
-- **[OPEN] Stagger strategy**: How to pick non-colliding cron minutes for new tasks?
+- **[RESOLVED] Stagger strategy**: How to pick non-colliding cron minutes for new tasks?
   - Option A: Inspect existing tasks at skill runtime, find the next available 15-minute slot
   - Option B: Use a deterministic hash of the project name to assign a minute (no inspection needed)
   - Option C: Let user specify the minute, but warn if it collides with an existing task
-  - Resolution: _[TBD]_
+  - Resolution: Option B. Use `hash(project_name) % 60` to assign cron minute. No runtime inspection needed, deterministic, collision-resistant at ~10 projects scale.
 
-- **[OPEN] Idempotency on re-run**: What happens if the skill is run for a project that already has a context-sync task?
+- **[RESOLVED] Idempotency on re-run**: What happens if the skill is run for a project that already has a context-sync task?
   - Option A: Refuse — error out with "task already exists"
   - Option B: Update the existing task with new parameters (destructive overwrite)
   - Option C: Prompt user to confirm overwrite or skip
-  - Resolution: _[TBD]_
+  - Resolution: Option A. Error out with "task already exists for {project}, use update_scheduled_task to modify." No silent overwrites.
 
-- **[OPEN] STATE.md size guard**: Existing context-sync tasks have implicit size limits. Should the generated task enforce an explicit max line count for STATE.md?
+- **[RESOLVED] STATE.md size guard**: Existing context-sync tasks have implicit size limits. Should the generated task enforce an explicit max line count for STATE.md?
   - Option A: Hard cap (e.g., 80 lines) — truncate oldest entries if exceeded
   - Option B: Soft warning — flag if STATE.md exceeds threshold but do not truncate
   - Option C: No guard — trust the sync logic to be concise (current behavior)
-  - Resolution: _[TBD]_
+  - Resolution: Option B. Flag if STATE.md exceeds 80 lines but do not truncate. Warning appears in sync output. Human decides whether to trim.
 
-- **[OPEN] Health check failure behavior**: When the optional health check fails during a sync run, what should happen?
+- **[RESOLVED] Health check failure behavior**: When the optional health check fails during a sync run, what should happen?
   - Option A: Log the failure in STATE.md and continue with the rest of the sync
   - Option B: Abort the entire sync — do not update STATE.md or BACKLOG.md
   - Option C: Update STATE.md with the health failure as the top item, skip BACKLOG.md update
-  - Resolution: _[TBD]_
+  - Resolution: Option C. Write health check failure as top item in STATE.md. Skip BACKLOG.md update — don't compound stale data from an unhealthy state.
 
 ## Acceptance Criteria
 - Generates a working context-sync scheduled task for any project path

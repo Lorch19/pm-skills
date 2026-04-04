@@ -1,6 +1,6 @@
 # Mission: Create deploy-rsync Skill
 
-## Status: DRAFT
+## Status: READY
 
 <!--
 Status rules:
@@ -45,29 +45,29 @@ operator-kit/meta-tools/deploy-rsync/SKILL.md
 
 ### Decisions:
 
-- **[OPEN] Output format**: What does the skill produce?
+- **[RESOLVED] Output format**: What does the skill produce?
   - Option A: A standalone bash script file (e.g., `scripts/deploy.sh`) that gets saved to the project
   - Option B: A SKILL.md that, when invoked, runs the deploy commands directly via Claude Code bash tool
   - Option C: Both — generates the script file AND can execute it on demand
-  - Resolution: _[TBD]_
+  - Resolution: Option C. Generate a `scripts/deploy.sh` bash script file saved to the project AND the SKILL.md can execute it on demand. The script is the version-controlled artifact; the skill is the interface. Matches existing portfolio-system pattern.
 
-- **[OPEN] Rollback mechanism**: The mission says "rollback hint if health check fails" — how deep does rollback go?
+- **[RESOLVED] Rollback mechanism**: The mission says "rollback hint if health check fails" — how deep does rollback go?
   - Option A: Print a hint message only (e.g., "Run: ssh vps 'cd /path && git checkout HEAD~1'") — no automated rollback
   - Option B: Keep one previous version on VPS (rsync to deploy-prev/ before overwrite), script offers restore command
   - Option C: Git-based rollback — require the remote to be a git repo, use `git revert` on failure
-  - Resolution: _[TBD]_
+  - Resolution: Option B. Rsync current deployment to `deploy-prev/` before overwrite. Print restore command on health check failure. No git dependency on remote.
 
-- **[OPEN] Env var verification depth**: How thoroughly to check env vars?
+- **[RESOLVED] Env var verification depth**: How thoroughly to check env vars?
   - Option A: Check existence only (`[ -z "$VAR" ]`) — fast, catches missing vars
   - Option B: Check existence AND validate format (e.g., URL format for API endpoints, port range)
   - Option C: Check existence on local AND remote via SSH — catches deployment env mismatches
-  - Resolution: _[TBD]_
+  - Resolution: Option C. Verify env vars exist on both local machine and remote VPS via SSH. Catches the most common deploy failure: var missing on server.
 
-- **[OPEN] Service restart strategy**: How to handle systemd service restarts during deploy?
+- **[RESOLVED] Service restart strategy**: How to handle systemd service restarts during deploy?
   - Option A: Always restart all services listed in post-deploy commands
   - Option B: Only restart services whose files changed (requires tracking changed files from rsync output)
   - Option C: Configurable per-service: "always restart" vs "restart if changed" vs "never restart"
-  - Resolution: _[TBD]_
+  - Resolution: Option A. Always restart all listed services after deploy. Single-VPS deploys are infrequent enough that unnecessary restarts cost seconds. Simplicity over optimization.
 
 ## Acceptance Criteria
 - Generates a complete deploy script from parameters
