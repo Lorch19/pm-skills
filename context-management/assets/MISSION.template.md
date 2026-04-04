@@ -30,6 +30,22 @@
 - [ ] All existing tests pass
 - [ ] Changes documented in STATE.md if significant
 
+## Out of Scope
+- [What this mission explicitly does NOT cover]
+- [Adjacent work that should be a separate mission]
+- [Technology or approach explicitly NOT being used]
+
+## Verification
+- [Concrete command, comparison, or test the agent runs to confirm the skill works]
+- [Expected output or diff to validate against]
+- Must be executable without human judgment — binary pass/fail
+
+## Reference Implementation
+- [Path to an existing skill in operator-kit to use as structural template]
+- [Any deviations from the reference to note]
+
+## Effort: [S / M / L]
+
 ## Review Plan
 - **Domain logic involved?** [yes/no — if yes, adversarial review required before shipping]
 - **Adversarial questions:** [What are 2-3 ways this change could break or produce wrong results?]
