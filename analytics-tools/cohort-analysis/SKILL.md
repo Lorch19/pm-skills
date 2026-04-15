@@ -99,6 +99,87 @@ Which cohorts adopted fastest? Any patterns?"
 5. **Sufficient data**: At least 3-4 cohorts for meaningful pattern identification
 6. **Request specific output**: Ask for visualizations, Python scripts, or research recommendations
 
+## B2B SaaS Cohort Definitions
+
+B2C cohorts are usually "signup month." B2B SaaS requires richer cohort dimensions because the same signup month can hide wildly different customer populations:
+
+| Cohort dimension | Example values | Why it matters |
+|------------------|---------------|----------------|
+| **Acquisition period** | Signup month/quarter | Baseline — controls for product-era effects |
+| **Company size** | SMB / Mid-market / Enterprise | Retention curves differ by 10-30 pts across segments |
+| **Industry/vertical** | Financial / Healthcare / Tech / Regulated | Regulated industries retain longer, expand slower |
+| **Plan tier** | Free / Starter / Pro / Enterprise | Free-tier churn dominates aggregate metrics |
+| **Acquisition channel** | Inbound / Outbound / Partner / PLG | Self-serve vs. sales-led cohorts behave differently |
+| **Onboarding completion** | Completed activation event / Didn't | Activation is usually the strongest retention predictor |
+| **Seat count at start** | 1 / 2-10 / 11-50 / 50+ | Larger initial deployments have different expansion dynamics |
+| **Champion role** | Admin / End-user / Exec buyer | Who bought drives who stays |
+
+**Pick the cohort dimension that isolates the variable you're investigating.** Don't default to "signup month" if the question is "do enterprise deals retain better than SMB?"
+
+## Output Format Templates
+
+### Retention curve (monthly)
+
+```
+Cohort        N   M0    M1    M2    M3    M6    M12
+2025-Q1     100  100%   72%   65%   61%   55%   48%
+2025-Q2     140  100%   78%   70%   67%   60%   —
+2025-Q3     210  100%   82%   74%   69%   —     —
+2025-Q4     295  100%   85%   78%   —     —     —
+```
+
+### Cohort comparison table
+
+```
+Segment       N     M3 retention   M12 retention   Net revenue retention
+Enterprise    28    92%            85%             118%
+Mid-market    145   78%            64%             108%
+SMB           420   52%            34%             92%
+```
+
+### Cohort narrative (qualitative output)
+
+Alongside the numbers, produce a 3-part narrative:
+1. **The pattern** — what the data shows (1-2 sentences)
+2. **The hypothesis** — why this might be happening (with supporting signals)
+3. **The test** — what to do next to validate the hypothesis
+
+## Python Skeleton
+
+```python
+import pandas as pd
+
+def build_cohort_retention(df, user_col='user_id', date_col='event_date',
+                            cohort_col='signup_month'):
+    """
+    df: long-format event data, one row per user per active period.
+    Returns: cohort × period-since-cohort-start retention matrix.
+    """
+    df = df.copy()
+    df[cohort_col] = pd.to_datetime(df[cohort_col]).dt.to_period('M')
+    df[date_col] = pd.to_datetime(df[date_col]).dt.to_period('M')
+    df['period_index'] = (df[date_col] - df[cohort_col]).apply(lambda x: x.n)
+
+    cohort_sizes = df.groupby(cohort_col)[user_col].nunique()
+    cohort_counts = df.groupby([cohort_col, 'period_index'])[user_col].nunique().unstack(fill_value=0)
+    retention = cohort_counts.div(cohort_sizes, axis=0)
+    return retention
+
+# retention = build_cohort_retention(events_df)
+# retention.to_csv('retention_matrix.csv')
+```
+
+## Common Pitfalls
+
+- **Survivorship bias.** A cohort that's been around longer looks artificially stable because the churners already left. Always compare cohorts at the same age (M3 to M3, not M3 to M12).
+- **Small-sample noise.** A cohort with N=8 showing 87.5% retention is 7 users. One churn shifts the number by 12.5 points. Flag any cohort under ~30 users.
+- **Calendar vs. lifetime time.** "November retention" confuses calendar month with months-since-signup. Always label the axis clearly.
+- **Mixing free and paid in aggregate curves.** Free-tier churn will swamp everything. Segment before aggregating.
+- **Ignoring seasonality.** B2B budget cycles, fiscal year-end, summer slowdowns. Don't mistake seasonality for product failure.
+- **Retention without revenue.** Logo retention can look healthy while NRR is flat because expansion is dead. Look at both.
+- **One cohort, one metric.** A cohort with great retention and terrible expansion is a different story than one with the opposite. Show a scorecard, not a single number.
+- **Defining cohort after the fact.** If you define the cohort by an outcome you're measuring, you've created a tautology. Cohort dimensions should be set at t=0.
+
 ## Output Format
 
 You'll receive:
